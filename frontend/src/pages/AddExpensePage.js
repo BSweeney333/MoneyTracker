@@ -10,6 +10,7 @@ function AddExpensePage() {
 
     const navigate = useNavigate();
 
+    
     const addExpense = async () => {
         const newExpense = {category, amount};
         const response = await fetch('/expenses', {

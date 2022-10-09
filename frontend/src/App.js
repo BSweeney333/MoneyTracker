@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from "react-bootstrap/Container";
+import Row from 'react-bootstrap/Row'
 import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { useState} from 'react';
@@ -17,7 +18,8 @@ function App() {
 
   return (
   <Container  className="my-4" >
-    {/* <h1>MoneyTracker</h1>
+    <Row className='justify-content-md-center text-center'>
+      {/* <h1>MoneyTracker</h1>
     <HomePage setExpenseToUpdate={expenseToUpdate}/> */}
 
     <Router>
@@ -31,6 +33,8 @@ function App() {
           </Routes>  
         </div>
       </Router>
+    </Row>
+    
   </Container>
   );
 }
